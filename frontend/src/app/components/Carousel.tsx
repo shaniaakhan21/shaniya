@@ -5,7 +5,7 @@ import ArrowLeftIcon from '@mui/icons-material/ArrowLeft';
 import ArrowRightIcon from '@mui/icons-material/ArrowRight';
 import Image from 'next/image';
 import type { StaticImageData } from 'next/image';
-import styles from './carousel.css';
+import './carousel.css';
 
 interface CarouselProps {
     images: StaticImageData[];
@@ -34,13 +34,13 @@ const Carousel: React.FC<CarouselProps> = ({ images }) => {
     return (
         <div className='flex justify-center'>
             <Box sx={{ position: 'relative', width: '84%', height: '700px',  overflow: 'hidden' }} className='flex  h-fit sm:h-full border border-grey-400'>
-                <div className={`${styles.carouselWrapper}`} style={{ transform: `translateX(-${currentIndex * 100}%)` }}>
+                <div className='carouselWrapper' style={{ transform: `translateX(-${currentIndex * 100}%)` }}>
                     {images.map((image, index) => (
-                        <div key={index} className={styles.carouselItem}>
+                        <div key={index} className='carouselItem'>
                             <Image
                                 src={image}
                                 alt={`Image ${index + 1}`}
-                                className={styles.carouselImage}
+                                className='carouselImage'
                             />
                         </div>
                     ))}
