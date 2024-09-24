@@ -68,5 +68,5 @@ jobs:
     # Step 10: Deploy Django backend to Heroku
     - name: Deploy to Heroku
       run: |
-        git fetch --all --unshallow || echo "Already a full clone, no unshallow needed."
-        git push https://heroku:${{ secrets.HEROKU_API_KEY }}@git.heroku.com/shaniya.git HEAD:master
+        git fetch --unshallow || git fetch --all --unshallow
+        git push https://heroku:${{ secrets.HEROKU_API_KEY }}@git.heroku.com/shaniya.git HEAD:main
