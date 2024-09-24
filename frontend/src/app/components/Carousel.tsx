@@ -5,7 +5,7 @@ import ArrowLeftIcon from '@mui/icons-material/ArrowLeft';
 import ArrowRightIcon from '@mui/icons-material/ArrowRight';
 import Image from 'next/image';
 import type { StaticImageData } from 'next/image';
-import styles from './Carousel.module.css';
+import styles from './carousel.css';
 
 interface CarouselProps {
     images: StaticImageData[];
