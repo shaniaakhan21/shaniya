@@ -22,6 +22,15 @@ frontend/.next/                 # Next.js build folder
 frontend/out/                   # Next.js export folder (if using static export)
 frontend/dist/                  # Any other frontend build folder
 
+
+# Node.js / Next.js
+node_modules/
+npm-debug.log
+yarn-error.log
+.next/                 # Next.js build folder
+out/                   # Next.js export folder (if using static export)
+dist/                  # Any other frontend build folder
+
 # OS-specific files
 .DS_Store                        # MacOS specific file
 Thumbs.db                        # Windows specific file
