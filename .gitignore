@@ -1,0 +1,33 @@
+# Python
+env/
+*.pyc
+__pycache__/
+*.pyo
+*.pyd
+*.env
+db.sqlite3
+migrations/
+
+# Django
+portfolio_backend/settings.py   # If you have sensitive environment settings, otherwise leave it out.
+*.log                           # Any log files
+portfolio_backend/media/                          # If you have a folder for user-uploaded files (if applicable)
+staticfiles/                    # If using Django collectstatic, ignore generated static files
+
+# Node.js / Next.js
+frontend/node_modules/
+frontend/npm-debug.log
+frontend/yarn-error.log
+frontend/.next/                 # Next.js build folder
+frontend/out/                   # Next.js export folder (if using static export)
+frontend/dist/                  # Any other frontend build folder
+
+# OS-specific files
+.DS_Store                        # MacOS specific file
+Thumbs.db                        # Windows specific file
+
+# Editor-specific files
+.vscode/
+.idea/
+*.swp                            # vi/vim swap file
+*.swo                            # vi/vim swap file

@@ -1,0 +1,82 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Light mode */
+:root {
+  --bg-color: #d9d9d933;
+  --text-color: #000000;
+}
+
+/* Dark mode */
+:root.dark {
+  --bg-color: #000000;
+  --text-color: #ffffff;
+}
+
+/* Pink mode */
+:root.pink {
+  --bg-color: #f9a8d4;
+  --text-color: #831843;
+}
+
+/* Apply the custom properties */
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  margin: 0;
+  padding: 0;
+}
+
+.projectPage p {
+  font-size: 0.6rem;
+  line-height: 1rem;;
+}
+
+.MuiAppBar-root {
+  background-color: transparent !important;
+  box-shadow: none !important;
+}
+
+.container {
+  padding: 4%;
+}
+
+.MuiTabs-flexContainer {
+  justify-content: space-between;
+}
+
+/* For screens >= 640px (sm) */
+@media (min-width: 640px) {
+  .container {
+    padding: 0% 14%;
+  }
+
+  .projectPage p {
+    font-size: 1.1rem;
+    margin-bottom: 1.25em;
+    line-height: 1.88rem;;
+    text-size-adjust: 100%;
+    color: #474747;
+  }
+}
+
+/* For screens >= 768px (md) */
+@media (min-width: 768px) {
+
+}
+
+/* For screens >= 1024px (lg) */
+@media (min-width: 1024px) {
+
+}
+
+/* For screens >= 1280px (xl) */
+@media (min-width: 1280px) {
+
+}
+
+/* For screens >= 1536px (2xl) */
+@media (min-width: 1536px) {
+
+}
