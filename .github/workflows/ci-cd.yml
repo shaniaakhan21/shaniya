@@ -31,37 +31,41 @@ jobs:
       with:
         node-version: '18'
 
-    # Step 4: Install Django backend dependencies
+    # Step 4: Set up Node.js for Next.js (Frontend)
+    - name: Set up Node.js
+      uses: actions/setup-node@v2
+      with:
+        node-version: '18'
+  # Step 5: Install Django backend dependencies
     - name: Install backend dependencies
       run: |
         python -m venv env
         source env/bin/activate
         pip install -r portfolio_backend/requirements.txt
 
-    # Step 5: Run Django backend tests (if applicable)
+    # Step 6: Run Django backend tests (if applicable)
     - name: Run backend tests
       run: |
         source env/bin/activate
         python portfolio_backend/manage.py test
 
-    # Step 6: Install frontend dependencies
+    # Step 7: Install frontend dependencies
     - name: Install frontend dependencies
       run: |
         cd frontend
         npm install
 
-    # Step 7: Build the frontend
+    # Step 8: Build the frontend
     - name: Build frontend
       run: |
         cd frontend
         npm run build
 
-    # Step 8: Deploy frontend to Vercel
-    # Vercel handles automatic deployment through GitHub integration, no need for manual deployment steps.
+    # Step 9: Deploy frontend to Vercel
     - name: Vercel Deployment Info
       run: echo "Frontend is deployed automatically via Vercel GitHub integration."
 
-    # Step 9: Deploy Django backend to Heroku
+    # Step 10: Deploy Django backend to Heroku
     - name: Deploy to Heroku
       run: |
         git push https://heroku:${{ secrets.HEROKU_API_KEY }}@git.heroku.com/shaniya.git HEAD:master
