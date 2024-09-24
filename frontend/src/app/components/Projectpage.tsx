@@ -1,7 +1,7 @@
 "use client";
 import React from 'react';
 import Carousel from './Carousel';
-import { ThemeProvider } from '@/context/ThemeProvider';
+import { ThemeProvider } from '../../context/ThemeProvider';
 import { Box, Typography } from '@mui/material';
 import { StaticImageData } from 'next/image';
 import Link from 'next/link';

@@ -2,7 +2,7 @@
 import localFont from "next/font/local";
 import "./globals.css";
 import Sidebar from "./components/Sidebar";
-import { ThemeProvider } from "@/context/ThemeProvider";
+import { ThemeProvider } from "../context/ThemeProvider";
 import RightSidebar from "./components/RightSidebar";
 import { usePathname } from "next/navigation";
 
