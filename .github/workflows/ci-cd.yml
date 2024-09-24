@@ -62,4 +62,4 @@ jobs:
     # Step 9: Deploy Django backend to Heroku
     - name: Deploy to Heroku
       run: |
-        git push https://heroku:${{ secrets.HEROKU_API_KEY }}@git.heroku.com/<your-heroku-app-name>.git HEAD:master
+        git push https://heroku:${{ secrets.HEROKU_API_KEY }}@git.heroku.com/shaniya.git HEAD:master
