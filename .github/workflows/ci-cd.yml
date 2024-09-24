@@ -3,10 +3,10 @@ name: CI/CD Pipeline
 on:
   push:
     branches:
-      - master
+      - main
   pull_request:
     branches:
-      - master
+      - main
 
 jobs:
   build:
@@ -27,7 +27,7 @@ jobs:
     - name: Set up Node.js
       uses: actions/setup-node@v2
       with:
-        node-version: '16'
+        node-version: '18'
 
     # Step 4: Install Django backend dependencies
     - name: Install backend dependencies

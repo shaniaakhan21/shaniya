@@ -4,6 +4,7 @@ import { Box } from '@mui/material';
 import Image from 'next/image';
 import Link from 'next/link';
 import CWEImage from '../../assets/images/work/cwe.png'
+import { StaticImageData } from 'next/image';
 // Define the ProjectProps interface
 interface ProjectProps {
     imageSrc: StaticImageData;

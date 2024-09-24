@@ -2,7 +2,7 @@
 const nextConfig = {
     // Allow connections from all network interfaces
     experimental: {
-      outputFileTracing: true,
+      // outputFileTracing: true,
     },
   };
   
