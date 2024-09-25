@@ -74,7 +74,7 @@ const PostFeed: React.FC = () => {
                     icon={<CelebrationIcon  className='text-[12px] sm:text-[16px]' />}
                     iconPosition="start"
                     label="Feed"
-                    className='text-[9px] sm:text-[16px] min-h-fit min-w-fit'
+                    className='font-size-16-9 min-h-fit min-w-fit'
                 />
                 <Tab
                     sx={{
@@ -90,7 +90,7 @@ const PostFeed: React.FC = () => {
                     icon={<SchoolIcon  className='text-[12px] sm:text-[16px]' />}
                     iconPosition="start"
                     label="Education"
-                     className='text-[9px] sm:text-[16px] min-h-fit min-w-fit'
+                     className='font-size-16-9 min-h-fit min-w-fit'
                 />
                 <Tab
                     sx={{
@@ -106,7 +106,7 @@ const PostFeed: React.FC = () => {
                     icon={<LaptopIcon  className='text-[12px] sm:text-[16px]' />}
                     iconPosition="start"
                     label="Work"
-                    className='text-[9px] sm:text-[16px] min-h-fit min-w-fit'
+                    className='font-size-16-9 min-h-fit min-w-fit'
                 />
                 <Tab
                     sx={{
@@ -122,7 +122,7 @@ const PostFeed: React.FC = () => {
                     icon={<RocketLaunchIcon  className='text-[12px] sm:text-[16px]' />}
                     iconPosition="start"
                     label="Projects"
-                    className='text-[9px] sm:text-[16px] min-h-fit min-w-fit'
+                    className='font-size-16-9 min-h-fit min-w-fit'
                 />
             </Tabs>
 

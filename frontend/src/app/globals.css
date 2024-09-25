@@ -51,6 +51,18 @@ body {
   font-size: 12px!important;
 }
 
+.min-w-fit {
+  min-width: fit-content!important;
+}
+
+.min-h-fit {
+  min-height: fit-content!important;
+}
+
+.font-size-16-9{
+  font-size: 9px!important;
+}
+
 /* For screens >= 640px (sm) */
 @media (min-width: 640px) {
   .container {
@@ -67,6 +79,10 @@ body {
 
   .MuiSvgIcon-root{
     font-size: 1.125rem!important;
+  }
+
+  .font-size-16-9{
+    font-size: 16px!important;
   }
 }
 
