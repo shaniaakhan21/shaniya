@@ -17,7 +17,7 @@ const VolunteerExperience: React.FC = () => {
                             height={50} alt='Go Girl Logo'
                         />
                     </Link>
-                    <div className='pl-4 sm:pr-4'>
+                    <div className='pl-4 sm:pl-0 sm:pr-4'>
 
                         <h2 className='text-sm font-semibold'>
                             Chief Operating Officer

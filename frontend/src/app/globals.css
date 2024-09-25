@@ -46,6 +46,11 @@ body {
   justify-content: space-between;
 }
 
+
+.MuiSvgIcon-root{
+  font-size: 12px!important;
+}
+
 /* For screens >= 640px (sm) */
 @media (min-width: 640px) {
   .container {
@@ -58,6 +63,10 @@ body {
     line-height: 1.88rem;;
     text-size-adjust: 100%;
     color: #474747;
+  }
+
+  .MuiSvgIcon-root{
+    font-size: 1.125rem!important;
   }
 }
 
