@@ -11,13 +11,13 @@ const VolunteerExperience: React.FC = () => {
         <Box>
             <h2 className='text-lg font-bold mb-2'>Volunteer Work</h2>
             <div>
-                <div className='flex flex-row items-center justify-start sm:justify-between'>
+                <div className='flex flex-row items-center justify-start lg:justify-between'>
                     <Link href='https://www.gogirlorganisation.com/' target='_blank'>
                         <Image src={GoGirl} width={50}
                             height={50} alt='Go Girl Logo'
                         />
                     </Link>
-                    <div className='pl-4 sm:pl-0 sm:pr-4'>
+                    <div className='pl-4 lg:pl-0 sm:pr-4'>
 
                         <h2 className='text-sm font-semibold'>
                             Chief Operating Officer

@@ -15,6 +15,7 @@ import RocketLaunchIcon from '@mui/icons-material/RocketLaunch';
 import Education from './Education';
 import Work from './Work';
 import Project from './Project';
+import RightSidebar from './RightSidebar';
 
 const PostFeed: React.FC = () => {
     const [activeTab, setActiveTab] = useState(0);
@@ -180,6 +181,9 @@ const PostFeed: React.FC = () => {
                 {activeTab === 1 && <><Education /></>}
                 {activeTab === 2 && <><Work /></>}
                 {activeTab === 3 && <><Project /></>}
+            </div>
+            <div className='hidden md:relative md:block lg:hidden'>
+            <RightSidebar/>
             </div>
         </Box>
     );

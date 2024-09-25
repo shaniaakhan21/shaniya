@@ -143,7 +143,7 @@ const Work: React.FC = () => {
             {items.map((item, index) => (
                 <div key={index} className='mb-2'>
                     <div className="flex flex-row justify-between items-center">
-                        <h6 className="text-sm sm:text-2xl font-bold text-black">
+                        <h6 className="text-sm  md:text-xl lg:text-2xl  font-bold text-black">
                             {item.role}
                         </h6>
                         <div className='text-xs sm:text-sm' style={{ color: item.period.includes('Present') ? '#0a66c2' : '#cb112d' }}>
@@ -151,7 +151,7 @@ const Work: React.FC = () => {
                         </div>
                     </div>
                     <div className="flex flex-row justify-between">
-                        <p  className="font-semibold text-xs sm:text-lg">
+                        <p  className="font-semibold text-xs md:text-base lg:text-lg">
                             {item.company}
                         </p>
                         <p  className='text-xs sm:text-sm'>{item.location}</p>
@@ -183,10 +183,10 @@ const Work: React.FC = () => {
     return (
         <ThemeProvider>
             <div className='flex justify-between items-center py-2 mb-2'>
-                <button className={`px-3 py-1 sm:px-8 sm:py-2 rounded-full text-sm sm:text-base text-center ${activeSection === 'All' ? 'bg-[#cc0088] text-white' : 'bg-white'}`} onClick={() => setActiveSection('All')}>All</button>
-                <button className={`px-3 py-1 sm:px-8 sm:py-2 rounded-full text-sm sm:text-base text-center ${activeSection === 'Professional' ? 'bg-[#cc0088] text-white' : 'bg-white'}`} onClick={() => setActiveSection('Professional')}>Professional</button>
-                <button className={`px-3 py-1 sm:px-8 sm:py-2 rounded-full text-sm sm:text-base text-center ${activeSection === 'Volunteer' ? 'bg-[#cc0088] text-white' : 'bg-white'}`} onClick={() => setActiveSection('Volunteer')}>Volunteer</button>
-                <button className={`px-3 py-1 sm:px-8 sm:py-2 rounded-full text-sm sm:text-base text-center ${activeSection === 'Internships' ? 'bg-[#cc0088] text-white' : 'bg-white'}`} onClick={() => setActiveSection('Internships')}>Internships</button>
+                <button className={`px-3 py-1 md:px-4 md:py-2 lg:px-8 lg:py-2  rounded-full text-sm sm:text-base text-center ${activeSection === 'All' ? 'bg-[#cc0088] text-white' : 'bg-white'}`} onClick={() => setActiveSection('All')}>All</button>
+                <button className={`px-3 py-1 md:px-4 md:py-2 lg:px-8 lg:py-2  rounded-full text-sm sm:text-base text-center ${activeSection === 'Professional' ? 'bg-[#cc0088] text-white' : 'bg-white'}`} onClick={() => setActiveSection('Professional')}>Professional</button>
+                <button className={`px-3 py-1 md:px-4 md:py-2 lg:px-8 lg:py-2  rounded-full text-sm sm:text-base text-center ${activeSection === 'Volunteer' ? 'bg-[#cc0088] text-white' : 'bg-white'}`} onClick={() => setActiveSection('Volunteer')}>Volunteer</button>
+                <button className={`px-3 py-1 md:px-4 md:py-2 lg:px-8 lg:py-2  rounded-full text-sm sm:text-base text-center ${activeSection === 'Internships' ? 'bg-[#cc0088] text-white' : 'bg-white'}`} onClick={() => setActiveSection('Internships')}>Internships</button>
             </div>
 
             {(activeSection === 'All' || activeSection === 'Professional') && (

@@ -35,6 +35,7 @@ import Heroku from '../../assets/images/tech/Heroku.png';
 import Typscript from '../../assets/images/tech/TypeScript.png';
 import './sidebar.css'
 import BasicInfo from './Basicinfo';
+import RightSidebar from './RightSidebar';
 
 const skills = [
     { logo: HTML, name: "HTML5" },
@@ -66,7 +67,7 @@ const skills = [
 
 const Sidebar: React.FC = () => {
     return (
-        <aside className="w-full sm:w-1/6 h-fit top-10 relative sm:fixed">
+        <aside className="w-full sm:w-[31%] md:w-[33%] lg:w-1/6 h-fit top-10 relative sm:fixed">
             <div className='rounded-xl shadow-md p-4 bg-white'>
                 <div className="mb-2 flex justify-center flex-col items-center">
                     <div className='bg-sidebar'></div>

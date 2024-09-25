@@ -30,7 +30,7 @@ body {
 
 .projectPage p {
   font-size: 0.6rem;
-  line-height: 1rem;;
+  line-height: 1rem;
 }
 
 .MuiAppBar-root {
@@ -39,76 +39,84 @@ body {
 }
 
 .container {
-  padding: 4%;
+  padding: 0 14%;
 }
 
 .MuiTabs-flexContainer {
   justify-content: space-between;
 }
 
-
-.MuiSvgIcon-root{
-  font-size: 12px!important;
-}
-
 .min-w-fit {
-  min-width: fit-content!important;
+  min-width: fit-content !important;
 }
 
 .min-h-fit {
-  min-height: fit-content!important;
+  min-height: fit-content !important;
 }
 
-.font-size-16-9{
-  font-size: 9px!important;
+.font-size-16-9 {
+  font-size: 16px !important;
 }
 
-.bb{
+.bb {
   position: relative;
   border-bottom: 1px solid rgb(224, 224, 224);
   padding-bottom: 16px;
   margin-bottom: 16px;
 }
 
-/* For screens >= 640px (sm) */
-@media (min-width: 640px) {
+/* For screens <= 1536px (2xl) */
+@media (max-width: 1536px) {
+  /* You can add styles here specific to screens <= 1536px */
+}
+
+/* For screens <= 1280px (xl) */
+@media (max-width: 1280px) {
+  /* Add xl-specific styles here */
+}
+
+/* For screens <= 1024px (lg) */
+@media (max-width: 1024px) {
   .container {
-    padding: 0% 14%;
+    padding: 0 3%!important
+  }
+}
+
+/* For screens <= 768px (md) */
+@media (max-width: 768px) {
+
+  .MuiTab-root {
+    padding: 1.5% 2%;
+  }
+
+  .font-size-16-9 {
+    font-size: 12px !important;
+  }
+
+  .container {
+    padding: 0 3%!important
+}
+}
+
+/* For screens <= 640px (sm) */
+@media (max-width: 640px) {
+  .container {
+    padding: 0% 4%;
   }
 
   .projectPage p {
     font-size: 1.1rem;
     margin-bottom: 1.25em;
-    line-height: 1.88rem;;
+    line-height: 1.88rem;
     text-size-adjust: 100%;
     color: #474747;
   }
 
-  .MuiSvgIcon-root{
-    font-size: 1.125rem!important;
+  .MuiSvgIcon-root {
+    font-size: 12px !important;
   }
 
-  .font-size-16-9{
-    font-size: 16px!important;
+  .font-size-16-9 {
+    font-size: 9px !important;
   }
-}
-
-/* For screens >= 768px (md) */
-@media (min-width: 768px) {
-
-}
-
-/* For screens >= 1024px (lg) */
-@media (min-width: 1024px) {
-
-}
-
-/* For screens >= 1280px (xl) */
-@media (min-width: 1280px) {
-
-}
-
-/* For screens >= 1536px (2xl) */
-@media (min-width: 1536px) {
-
 }
