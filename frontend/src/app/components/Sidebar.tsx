@@ -35,7 +35,6 @@ import Heroku from '../../assets/images/tech/Heroku.png';
 import Typscript from '../../assets/images/tech/TypeScript.png';
 import './sidebar.css'
 import BasicInfo from './Basicinfo';
-import RightSidebar from './RightSidebar';
 
 const skills = [
     { logo: HTML, name: "HTML5" },
