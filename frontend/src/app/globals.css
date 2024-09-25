@@ -63,6 +63,13 @@ body {
   font-size: 9px!important;
 }
 
+.bb{
+  position: relative;
+  border-bottom: 1px solid rgb(224, 224, 224);
+  padding-bottom: 16px;
+  margin-bottom: 16px;
+}
+
 /* For screens >= 640px (sm) */
 @media (min-width: 640px) {
   .container {

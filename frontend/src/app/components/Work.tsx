@@ -1,41 +1,10 @@
 "use client";
 import React, { useState } from 'react';
-import { Box, Typography, List, ListItem, ListItemText } from '@mui/material';
-import { styled } from '@mui/system';
-import { ThemeProvider, useTheme } from '../../context/ThemeProvider'; // Adjust the import path as necessary
+import { Box,  List, ListItem, ListItemText } from '@mui/material';
+import { ThemeProvider } from '../../context/ThemeProvider'; // Adjust the import path as necessary
 import SkillColors from './SkillColors';
 
-// Define a styled component for the timeline item
-const TimelineItem = styled('div')(() => {
-    const { theme: currentTheme } = useTheme();
-    const colorMap = {
-        light: '#e0e0e0',  // Grey 300 for light theme
-        dark: '#b0b0b0',   // Grey 300 for dark theme
-        pink: '#f0f0f0',   // Grey 300 for pink theme
-    };
 
-    return {
-        position: 'relative',
-        borderBottom: `1px solid ${colorMap[currentTheme]}`,
-        paddingBottom: '16px',
-        marginBottom: '16px',
-    };
-});
-
-// Define a styled component for the date
-const DateText = styled(Typography)(() => {
-    const { theme: currentTheme } = useTheme();
-    const colorMap = {
-        light: '#757575',  // Grey 600 for light theme
-        dark: '#9e9e9e',   // Grey 600 for dark theme
-        pink: '#cfcfcf',   // Grey 600 for pink theme
-    };
-
-    return {
-        color: colorMap[currentTheme],
-        fontSize: '14px',
-    };
-});
 
 const Work: React.FC = () => {
     const [activeSection, setActiveSection] = useState<'All' | 'Professional' | 'Volunteer' | 'Internships'>('All');
@@ -67,8 +36,8 @@ const Work: React.FC = () => {
         },
         {
             company: 'MyDiela, FZE L.L.C',
-            location: 'Remote Job',
-            role: 'Software Developer (Contract)',
+            location: 'Remote Job (Contract)',
+            role: 'Software Developer',
             period: 'Sept 2021 – Nov 2021',
             description: [
                 'Developed a school management software using Django and Django-baton, serving over 1,000 users with 2,000 daily transactions.',
@@ -147,7 +116,7 @@ const Work: React.FC = () => {
         {
             company: 'Omion Fusion Technologies Private Limited',
             location: 'Remote',
-            role: 'Web Developer and Python Trainer',
+            role: 'Web Developer & Trainer',
             period: 'May 2020 - Jul 2020',
             description: [
                 'Skilled in HTML, CSS, JavaScript, WordPress, Python, and Django, with experience in developing and maintaining a website with 99.9% uptime.',
@@ -172,23 +141,23 @@ const Work: React.FC = () => {
     const Section = ({ items, sectionStyles }: { items: ExperienceItem[], sectionStyles: string }) => (
         <Box className={sectionStyles}>
             {items.map((item, index) => (
-                <TimelineItem key={index}>
+                <div key={index} className='mb-2'>
                     <div className="flex flex-row justify-between items-center">
-                        <Typography variant="h6" className="text-sm sm:text-2xl font-bold text-black">
+                        <h6 className="text-sm sm:text-2xl font-bold text-black">
                             {item.role}
-                        </Typography>
-                        <DateText className='text-xs sm:text-sm' style={{ color: item.period.includes('Present') ? '#0a66c2' : '#cb112d' }}>
+                        </h6>
+                        <div className='text-xs sm:text-sm' style={{ color: item.period.includes('Present') ? '#0a66c2' : '#cb112d' }}>
                             {item.period}
-                        </DateText>
+                        </div>
                     </div>
                     <div className="flex flex-row justify-between">
-                        <Typography variant="body1" className="font-semibold text-xs sm:text-xl">
+                        <p  className="font-semibold text-xs sm:text-lg">
                             {item.company}
-                        </Typography>
-                        <Typography variant="body1" className='text-xs sm:text-sm'>{item.location}</Typography>
+                        </p>
+                        <p  className='text-xs sm:text-sm'>{item.location}</p>
                     </div>
                     <Box className="mt-2">
-                        <Typography variant="body2" className="text-xs sm:text-base font-semibold text-black">Responsibilities:</Typography>
+                        <p className="text-xs sm:text-base font-semibold text-black">Responsibilities:</p>
                         <List dense>
                             {item.description.map((desc, idx) => (
                                 <ListItem key={idx} disablePadding>
@@ -198,14 +167,15 @@ const Work: React.FC = () => {
                         </List>
                     </Box>
                     <Box className="mt-2">
-                        <Typography variant="body2" className="font-semibold mb-2">Technologies & Tools:</Typography>
+                        <p className="font-semibold mb-2">Technologies & Tools:</p>
                         <Box className="flex flex-wrap gap-2">
                         {item.skills.map((skill, idx) => (
                                 <SkillColors key={idx} skill={skill} />
                             ))}
                         </Box>
                     </Box>
-                </TimelineItem>
+                    <div className='bb'></div>
+                </div>
             ))}
         </Box>
     )
@@ -220,10 +190,10 @@ const Work: React.FC = () => {
             </div>
 
             {(activeSection === 'All' || activeSection === 'Professional') && (
-                <Section items={workExperiences} sectionStyles="bg-white rounded-xl p-4" />
+                <Section items={workExperiences} sectionStyles="bg-white rounded-xl p-4 mb-2" />
             )}
             {(activeSection === 'All' || activeSection === 'Volunteer') && (
-                <Section items={volunteerExperiences} sectionStyles="bg-[#cc008808] rounded-xl p-4 mt-2" />
+                <Section items={volunteerExperiences} sectionStyles="bg-[#cc008808] rounded-xl p-4 mt-2 mb-2" />
             )}
             {(activeSection === 'All' || activeSection === 'Internships') && (
                 <Section items={internships} sectionStyles="bg-[#55aaff17] rounded-xl p-4 mt-2 sm:mb-0 mb-2" />
