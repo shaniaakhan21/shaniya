@@ -25,20 +25,32 @@ const PostFeed: React.FC = () => {
         {
             author: 'Shaniya Khan',
             date: '2023-12-25',
-            title: 'My First Post',
-            content: 'This is my site where I try and post about what Im up to and how to do things with code. You can follow along with RSS by hitting the Follow button up above. Or if youre only interested in stuff I wrote about, check out /writing.',
+            title: 'Brewing Code & Breaking Barriers',
+            content: `Hey there! Welcome to my little corner of the internet. <br />
+            Sure, you can check out my resume to see my qualifications, but here’s the real scoop you won’t find there: I'm all about that sweet "me-time" with a strong cup of coffee in hand.<br />
+            I love exploring new cafes (because, hey, coffee tastes better when you’re sitting in a cozy new spot) and creating things, whether it’s code or concepts.<br />
+            Now, by day, I’m the proud COO of Go Girl Organization, where we’re on a mission to bridge the gender gap in IT.<br />
+            It’s incredibly fulfilling to help hundreds of girls dive into the world of tech, teaching them the skills that will launch their careers.<br />
+            Watching them grow? That’s the good stuff.<br />
+            Oh, and when it comes to tech, I’m a bit of a shapeshifter – I seamlessly switch between technologies based on the needs of the project and the team.<br />
+            Some might say I’ve got a knack for it (okay, maybe I’ll say it too). From coding marathons to exploring the latest tech trends, I live and breathe development. It’s my thing.<br />
+            So, stick around and explore – who knows, maybe we’ll grab a virtual coffee sometime!`,
             image: CoffeeImg,
             mood: 'Feeling fresh 😊',
             profilePic: ProfilePic1,
             pinned: true,
         },
+        
         {
             author: 'Jane Smith',
             date: '2024-01-15',
-            title: 'Another Post',
-            content: 'This is my site where I try and post about what Im up to and how to do things with code. You can follow along with RSS by hitting the Follow button up above. Or if youre only interested in stuff I wrote about, check out /writing.',
+            title: 'A Bread-Lover’s Journey',
+            content: `Bread is my love language! 🍞 Whether it’s a warm, fluffy pretzel or a crusty sourdough, I adore it in every shape and form.<br />
+            Each bite brings me joy, and I can’t resist trying new varieties. You might find me at a local bakery, excitedly sampling whatever delicious creation they have on offer.<br />
+            Recently, I’ve also ventured into the world of technical blogging, sharing my insights and experiences in tech. Writing has become another passion of mine, allowing me to connect with others and share knowledge.<br />
+            And on those creative days, I love to paint! It’s a therapeutic escape, where I can express myself in colors and brushstrokes. Join me in my journey of flavors, words, and art!`,
             image: PretzelImg,
-            mood: 'Excited for the weekend 🎉',
+            mood: 'Embracing creativity and flavors 🎨🥨',
             profilePic: ProfilePic1,
             pinned: false,
         },
@@ -49,7 +61,7 @@ const PostFeed: React.FC = () => {
     };
 
     return (
-        <Box className="w-full mt-0">
+        <Box className="w-full mt-2 sm:mt-0">
             {/* Tab Navigation */}
             <Tabs
                 value={activeTab}
@@ -162,7 +174,7 @@ const PostFeed: React.FC = () => {
 
                                 {/* Post title and content */}
                                 <h2 className="text-xl font-bold mt-2">{post.title}</h2>
-                                <p className="text-gray-800">{post.content}</p>
+                                <p className="text-gray-800" dangerouslySetInnerHTML={{ __html: post.content }} />
 
                                 {/* Post image */}
                                 <Image

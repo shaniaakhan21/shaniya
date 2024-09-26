@@ -44,7 +44,7 @@ const ProjectsPage: React.FC = () => {
                 projectName='CWE Buster'
                 projectUrl='https://www.cwebuster.com/'
                 bgColor='#ffeef978'
-                projectPage= '/project-one'
+                projectPage= {`/projects/${encodeURIComponent('cwebooster')}`}
             />
 
             <Project
@@ -53,7 +53,7 @@ const ProjectsPage: React.FC = () => {
                 projectName='Other Project'
                 projectUrl='https://www.otherproject.com'
                 bgColor='#ffeef978'
-                projectPage= '/project-one'
+                projectPage= {`/projects/${encodeURIComponent('emays')}`}
             />
 
             <Project
@@ -62,7 +62,7 @@ const ProjectsPage: React.FC = () => {
                 projectName='CWE Buster'
                 projectUrl='https://www.cwebuster.com/'
                 bgColor='#ffeef978'
-                projectPage= '/project-one'
+                projectPage= {`/projects/${encodeURIComponent('CWE Buster')}`}
             />
 
             <Project
@@ -71,7 +71,7 @@ const ProjectsPage: React.FC = () => {
                 projectName='Other Project'
                 projectUrl='https://www.otherproject.com'
                 bgColor='#ffeef978'
-                projectPage= '/project-one'
+                projectPage= {`/projects/${encodeURIComponent('CWE Buster')}`}
             />
         </div>
     );

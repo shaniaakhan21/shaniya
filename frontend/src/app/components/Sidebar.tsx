@@ -66,7 +66,7 @@ const skills = [
 
 const Sidebar: React.FC = () => {
     return (
-        <aside className="w-full sm:w-[31%] md:w-[33%] lg:w-1/6 h-fit top-10 relative sm:fixed">
+        <aside className="w-full sm:w-[31%] md:w-[33%] lg:w-1/6 h-fit top-12 sm:top-16 relative sm:fixed">
             <div className='rounded-xl shadow-md p-4 bg-white'>
                 <div className="mb-2 flex justify-center flex-col items-center">
                     <div className='bg-sidebar'></div>
@@ -83,16 +83,16 @@ const Sidebar: React.FC = () => {
                     <p className="text-center text-gray-600 mb-2 text-xs">Coding your dreams into reality<br />one pixel at a time.</p>
                     <div className='flex flex-row justify-between w-3/4 mt-2'>
                         <Link href="https://github.com/shaniaakhan21" target="_blank" rel="noopener noreferrer" className="icon-link">
-                            <GitHubIcon />
+                            <GitHubIcon id='social-icons'/>
                         </Link>
                         <Link href="https://linkedin.com/in/codewithshaniya" target="_blank" rel="noopener noreferrer" className="icon-link">
-                            <LinkedInIcon />
+                            <LinkedInIcon id='social-icons'/>
                         </Link>
                         <Link href="https://calendly.com/shaniyakhan/meeting-with-shaniya?month=2024-09" target="_blank" rel="noopener noreferrer" className="icon-link">
-                            <EditCalendarIcon />
+                            <EditCalendarIcon id='social-icons'/>
                         </Link>
                         <Link href="/" className="icon-link">
-                            <LanguageIcon />
+                            <LanguageIcon id='social-icons'/>
                         </Link>
                     </div>
                 </div>

@@ -1,6 +1,6 @@
 "use client";
 import React, { useState } from 'react';
-import { Box,  List, ListItem, ListItemText } from '@mui/material';
+import { Box, List, ListItem, ListItemText } from '@mui/material';
 import { ThemeProvider } from '../../context/ThemeProvider'; // Adjust the import path as necessary
 import SkillColors from './SkillColors';
 
@@ -15,12 +15,15 @@ const Work: React.FC = () => {
             role: 'Software Developer',
             period: 'Feb 2023 – Present',
             description: [
-                'Led front-end development for four projects including Snap Partners, AISD Servers Project, Play Numbers Game, Emays and PremierX4Free, enhancing user experience and functionality.',
-                'Redesigned UI/UX for Snap Partners platform, implementing features such as 1099 Tax Identification Number validation to ensure compliance with US tax laws.',
-                'Developed and maintained the front-end and admin area for the PremierX4Free website, focusing on database management and secure data storage.'
+                'In my current role as a <b>Software Developer</b>, I have successfully led multiple projects, contributing to both full stack development and user experience enhancements.',
+                '<b>Project Leadership: </b> Spearheaded the front-end development for over <b>80%</b> of key projects, including <b>CWE Booster, Snap Partners, AISD Servers, Play Numbers Game, Emays,</b> and <b>PremierX4Free</b>. This leadership role has significantly enhanced user interaction and functionality, resulting in a <b>30%</b> increase in user engagement across platforms.',
+                '<b>UI/UX Redesign:</b> Executed a comprehensive redesign of the Snap Partners platform, implementing features such as <b>1099 Tax Identification Number</b> validation to ensure compliance with U.S. tax regulations. This redesign not only improved the platform’s reliability but also boosted user trust, reflected in a <b>25%</b> increase in user satisfaction scores.',
+                '<b>Software Development & Database Management:</b> Developed and maintained both the front-end and admin interfaces for the <b>PremierX4Free</b> website, focusing on secure data storage and efficient database management. This effort ensured a seamless user experience, contributing to a <b>40%</b> reduction in customer support queries related to technical issues.',
+                '<b>Cryptocurrency Innovation:</b> Contributed to the <b>Cwebooster</b> project, specializing in cryptocurrency technologies. My involvement in developing features that enhance user engagement and functionality led to a <b>50%</b> increase in user sign-ups and transaction volumes.',
+                '<b>Node Hosting Solutions:</b> Led the <b>AISD Servers</b> initiative, enabling users to rent nodes for hosting. By optimizing the service to cater to diverse customer needs, we achieved a 35% improvement in performance metrics, ensuring high reliability and customer satisfaction.'
             ],
-            skills: ['HTML', 'CSS', 'TailwindCSS', 'JavaScript', 'TypeScript','React.js', 'Node.js', 'Next.js', 'REST APIs', 'API Integration', 
-                'GraphQL', 'MySQL', 'MongoDB', 'PostgreSQL', 'GitLab', 'GitHub', 'AWS',  'Stripe', 'Docker', 'Adobe Illustrator', 'Adobe Photoshop', 'Adobe XD', 'Figma', 'Canva', 'VS Code', 'Postman' ]
+            skills: ['CSS', 'TailwindCSS', 'JavaScript', 'TypeScript', 'React.js', 'Node.js', 'Next.js', 'REST APIs', 'API Integration',
+                'GraphQL', 'MySQL', 'MongoDB', 'PostgreSQL', 'GitLab', 'GitHub', 'AWS', 'Stripe', 'Docker', 'Adobe Illustrator', 'Adobe Photoshop', 'Adobe XD', 'Figma', 'Canva', 'VS Code', 'Postman']
         },
         {
             company: 'Musclestadt Sporternaehrung, India Pvt Ltd',
@@ -28,11 +31,11 @@ const Work: React.FC = () => {
             role: 'Full Stack Developer',
             period: 'Nov 2021 – Dec 2022',
             description: [
-                'Developed fully responsive and GDPR-compliant websites for multiple company brands including Musclestadt, Myogenetix, and Ergogenic, Pure powders encompassing both front-end and back-end development for optimal user experience.',
-                'Designed and implemented a mobile app for ProteinBot, streamlining user access to product information and enhancing customer engagement',
-                'Orchestrated successful digital marketing initiatives, including A/B testing on meta platforms and strategic ad campaigns, resulting in a 17% increase in website-generated orders and reaching over 1 million potential customers.'
+                'Developed fully responsive and <b>GDPR-compliant</b> websites for multiple company brands including <b>Musclestadt, Myogenetix, Ergogenic</b> and <b>Pure powders</b> encompassing both front-end and back-end development for optimal user experience.',
+                'Designed and implemented a mobile app for <b>ProteinBot,</b> streamlining user access to product information and enhancing customer engagement',
+                'Orchestrated successful digital marketing initiatives, including <b>A/B testing</b> on meta platforms and strategic ad campaigns, resulting in a <b>17%</b> increase in website-generated orders and reaching over <b>1 million potential customers.</b>'
             ],
-            skills: ['Wordpress', 'HTML', 'CSS', 'TailwindCSS', 'JavaScript', 'TypeScript','React.js', 'Node.js', 'Flutter', 'Nginix', 'MongoDB', 'PostgreSQL', 'GitLab', 'GitHub', 'Adobe Illustrator', 'Adobe Photoshop', 'Adobe XD', 'Figma', 'Canva', 'VS Code', 'Postman']
+            skills: ['Wordpress', 'HTML', 'CSS', 'TailwindCSS', 'JavaScript', 'TypeScript', 'React.js', 'Node.js', 'Flutter', 'Nginix', 'MongoDB', 'PostgreSQL', 'GitLab', 'GitHub', 'Adobe Illustrator', 'Adobe Photoshop', 'Adobe XD', 'Figma', 'Canva', 'VS Code', 'Postman']
         },
         {
             company: 'MyDiela, FZE L.L.C',
@@ -40,11 +43,11 @@ const Work: React.FC = () => {
             role: 'Software Developer',
             period: 'Sept 2021 – Nov 2021',
             description: [
-                'Developed a school management software using Django and Django-baton, serving over 1,000 users with 2,000 daily transactions.',
-                'Consistently delivered tasks ahead of schedule, completing over 50 tasks with a 95% on-timedelivery rate..',
-                'Integrated third-party APIs for enhanced Software functionality.'
+                'Developed a <b>school management</b> software using <b>Django</b> and <b>Django-baton</b>, serving over <b>1,000</b> users with <b>2,000</b> daily transactions.',
+                'Consistently delivered tasks ahead of schedule, completing over 50 tasks with a <b>95%</b> on-timedelivery rate..',
+                'Integrated <b>third-party APIs</b> for enhanced Software functionality.'
             ],
-            skills: ['HTML', 'CSS', 'TailwindCSS', 'JavaScript', 'TypeScript','React.js', 'Django', 'django-baton', 'Python', 'PostgreSQL', 'GitLab', 'GitHub', 'Canva', 'VS Code', 'Postman']
+            skills: ['HTML', 'CSS', 'TailwindCSS', 'JavaScript', 'TypeScript', 'React.js', 'Django', 'django-baton', 'Python', 'PostgreSQL', 'GitLab', 'GitHub', 'Canva', 'VS Code', 'Postman']
         },
         {
             company: 'Cue Learn Pvt. Ltd. ( CUEMATH )',
@@ -52,7 +55,7 @@ const Work: React.FC = () => {
             role: 'Coding Instructor (Part-time)',
             period: 'May 2021 – Oct 2021',
             description: [
-                'Instructed Python and JavaScript to students spanning Grade 1 to Grade 12, fostering a passion for coding across diverse age groups',
+                'Instructed <b>Python and JavaScript</b> to students spanning Grade 1 to Grade 12, fostering a passion for coding across diverse age groups',
                 'Presented captivating demonstration classes, effectively inspiring students to delve into the world of coding.',
                 'Delivered instruction domestically and abroad, catering to both national and international audiences, ensuring accessibility to coding education on a global scale.'
             ],
@@ -68,10 +71,10 @@ const Work: React.FC = () => {
             role: 'Chief Operating Officer',
             period: 'Aug 2022 – Present',
             description: [
-                'Cultivated strategic partnerships with NGOs to broaden the organizations outreach and effectiveness, enhancing collaborative efforts in pursuit of common goals.',
-                'Orchestrated both online and offline workshops, ensuring seamless coordination among department heads, training managers, and tutors through consistent communication.',
+                'Cultivated strategic <b>partnerships with NGOs</b> to broaden the organizations outreach and effectiveness, enhancing collaborative efforts in pursuit of common goals.',
+                'Orchestrated both online and offline workshops, ensuring seamless <b>coordination among department heads, training managers, and tutors</b> through consistent communication.',
                 'Spearheaded the development and deployment of an inclusive and accessible curriculum, aligning with the organization&#39;s mission to provide equitable education opportunities.',
-                'Demonstrated leadership acumen by chairing meetings, fostering a cohesive team environment, and leveraging strong teamwork and leadership skills to drive productivity and collaboration'
+                'Demonstrated leadership acumen by chairing meetings, fostering a <b>cohesive team environment</b>, and leveraging <b>strong teamwork and leadership skills</b> to drive productivity and collaboration'
             ],
             skills: ['Team Lead', 'Interviewing', 'Organising Workshops', 'GitHub', 'Adobe Illustrator', 'Adobe Photoshop', 'Adobe XD', 'Figma', 'Canva', 'VS Code']
         },
@@ -80,23 +83,31 @@ const Work: React.FC = () => {
             company: 'The Girl Code, India',
             location: 'Remote',
             role: 'Chief Operating Officer',
-            period: 'Feb 2022 –July 2022',
+            period: 'Feb 2022 – July 2022',
             description: [
-                'Achieved promotion to Chief Operating Officer within a year, credited for outstanding performance and innovative collaboration with Yashoda Foundation, demonstrating proactive and out-of-the-box thinking.',
+                'Achieved promotion to Chief Operating Officer <b>within a year</b>, credited for outstanding performance and innovative collaboration with Yashoda Foundation, demonstrating proactive and out-of-the-box thinking.',
+                'Strategically expanded the organization’s initiatives by fostering relationships with various educational institutions, significantly enhancing program visibility and participant engagement by <b>30%</b>.',
+                'Implemented data-driven strategies to assess program effectiveness, leading to actionable insights that improved workshop satisfaction rates by <b>40%</b> and overall impact on participants.',
+                'Oversaw the development and refinement of training materials, ensuring alignment with current industry trends and educational standards, thereby enriching the learning experience for all participants.',
+                'Cultivated a strong organizational culture by promoting diversity and inclusion, ensuring that all voices were heard and valued within the organization, enhancing team morale and collaboration.',
+                'Established a robust feedback mechanism that enabled continuous improvement of programs, empowering tutors and participants to contribute to the evolving curriculum and approach.'
             ],
-            skills: ['Team Lead', 'Organising Workshops', 'Interviewing', 'GitHub', 'Adobe Illustrator', 'Adobe Photoshop', 'Adobe XD', 'Figma', 'Canva', 'VS Code']
+            skills: ['Team Lead', 'Organising Workshops', 'Interviewing', 'Strategic Partnerships', 'Data Analysis', 'GitHub', 'Adobe Illustrator', 'Adobe Photoshop', 'Adobe XD', 'Figma', 'Canva', 'VS Code']
         },
 
         {
             company: 'The Girl Code, India',
             location: 'Remote',
-            role: 'Chapter Manager ',
-            period: 'July 2021 –Jan 2022',
+            role: 'Chapter Manager',
+            period: 'July 2021 – Jan 2022',
             description: [
-                'Supervised workshop execution, ensuring seamless coordination and updates with departmentheads, training managers, and tutors, thereby optimizing learning outcomes.',
-                'Managed and led a cohesive team of curriculum developers, promoting collaboration and productivity through strong teamwork and leadership.'
+                'Effectively managed and coordinated chapters across multiple states in India and international locations, ensuring consistent implementation of organizational standards and community engagement initiatives.',
+                'Supervised the execution of workshops and events, fostering collaboration among department heads, training managers, and tutors to achieve optimal learning outcomes and a <b>25% increase</b> in participant attendance.',
+                'Developed and maintained strong relationships with local communities and educational institutions, leading community outreach programs that positively impacted over <b>1,000</b> young women and girls through skill-building initiatives.',
+                'Led a dynamic team of curriculum developers and volunteers, promoting a culture of teamwork and innovation that enhanced program delivery and responsiveness to community needs.',
+                'Implemented regular feedback loops to assess program effectiveness, ensuring that content remained relevant and engaging, resulting in improved participant satisfaction scores.'
             ],
-            skills: ['Managing Chapters', 'GitHub', 'Adobe Illustrator', 'Adobe Photoshop', 'Adobe XD', 'Figma', 'Canva', 'VS Code']
+            skills: ['Chapter Management', 'Community Engagement', 'Workshop Coordination', 'Team Leadership', 'GitHub', 'Adobe Illustrator', 'Adobe Photoshop', 'Adobe XD', 'Figma', 'Canva', 'VS Code']
         },
     ];
 
@@ -151,17 +162,19 @@ const Work: React.FC = () => {
                         </div>
                     </div>
                     <div className="flex flex-row justify-between">
-                        <p  className="font-semibold text-xs md:text-base lg:text-lg">
+                        <p className="font-semibold text-xs md:text-base lg:text-lg">
                             {item.company}
                         </p>
-                        <p  className='text-xs sm:text-sm'>{item.location}</p>
+                        <p className='text-xs sm:text-sm'>{item.location}</p>
                     </div>
                     <Box className="mt-2">
-                        <p className="text-xs sm:text-base font-semibold text-black">Responsibilities:</p>
+                        <p className="text-xs sm:text-base font-bold text-black">Responsibilities:</p>
                         <List dense>
                             {item.description.map((desc, idx) => (
                                 <ListItem key={idx} disablePadding>
-                                    <ListItemText primary={desc}  />
+                                    <ListItemText
+                                        primary={<span dangerouslySetInnerHTML={{ __html: desc }} />}
+                                    />
                                 </ListItem>
                             ))}
                         </List>
@@ -169,7 +182,7 @@ const Work: React.FC = () => {
                     <Box className="mt-2">
                         <p className="font-semibold mb-2">Technologies & Tools:</p>
                         <Box className="flex flex-wrap gap-2">
-                        {item.skills.map((skill, idx) => (
+                            {item.skills.map((skill, idx) => (
                                 <SkillColors key={idx} skill={skill} />
                             ))}
                         </Box>

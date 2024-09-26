@@ -3,7 +3,7 @@ import React from 'react';
 import Carousel from './Carousel';
 import { ThemeProvider } from '../../context/ThemeProvider';
 import { Box, Typography } from '@mui/material';
-import { StaticImageData } from 'next/image';
+//import { StaticImageData } from 'next/image';
 import Link from 'next/link';
 import LinkIcon from '@mui/icons-material/Link';
 import GitHubIcon from '@mui/icons-material/GitHub';
@@ -12,7 +12,7 @@ import Footer from './Footer';
 
 interface ProjectPageProps {
     title: string;
-    images: StaticImageData[];
+    images: string[];
     description: string[];
     skills: string[];
 }
@@ -20,7 +20,7 @@ interface ProjectPageProps {
 const ProjectPage: React.FC<ProjectPageProps> = ({ title, images, description, skills }) => {
     return (
         <ThemeProvider>
-            <Box className="relative projectPage top-[8vh]" sx={{ px: 4 }}>
+            <Box className="relative projectPage top-[4vh] sm:top-[8vh]" sx={{ px: 4 }}>
                 <h2 className="text-lg sm:text-[2em] font-bold mt-1 mb-2 sm:mb-4 text-center">
                     {title}
                 </h2>
@@ -30,9 +30,9 @@ const ProjectPage: React.FC<ProjectPageProps> = ({ title, images, description, s
                     </div>
                     <Box className='px-6 py-2 sm:py-4 sm:px-28'>
                         {description.map((para, index) => (
-                            <Typography key={index} variant="body1" component="p" className='text-[4px] sm:text-base'>
+                            <p key={index}  className='text-[4px] sm:text-base'>
                                 {para}
-                            </Typography>
+                            </p>
                         ))}
                     </Box>
                     <div className='flex flex-col sm:flex-row justify-between items-center'>

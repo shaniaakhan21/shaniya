@@ -28,10 +28,6 @@ body {
   padding: 0;
 }
 
-.projectPage p {
-  font-size: 0.6rem;
-  line-height: 1rem;
-}
 
 .MuiAppBar-root {
   background-color: transparent !important;
@@ -78,7 +74,7 @@ body {
 /* For screens <= 1024px (lg) */
 @media (max-width: 1024px) {
   .container {
-    padding: 0 3%!important
+    padding: 0 3% !important
   }
 }
 
@@ -94,8 +90,8 @@ body {
   }
 
   .container {
-    padding: 0 3%!important
-}
+    padding: 0 3% !important
+  }
 }
 
 /* For screens <= 640px (sm) */
@@ -116,7 +112,20 @@ body {
     font-size: 12px !important;
   }
 
+  #social-icons {
+    font-size: 1.5rem !important;
+  }
+
   .font-size-16-9 {
     font-size: 9px !important;
+  }
+
+  .icons-ph p {
+    font-size: 12px !important;
+  }
+
+  .projectPage p {
+    font-size: 0.6rem;
+    line-height: 1rem;
   }
 }
