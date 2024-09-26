@@ -2,7 +2,7 @@
 import React from 'react';
 import Carousel from './Carousel';
 import { ThemeProvider } from '../../context/ThemeProvider';
-import { Box, Typography } from '@mui/material';
+import { Box } from '@mui/material';
 //import { StaticImageData } from 'next/image';
 import Link from 'next/link';
 import LinkIcon from '@mui/icons-material/Link';
