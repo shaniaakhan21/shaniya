@@ -61,9 +61,15 @@ body {
   margin-bottom: 16px;
 }
 
+.container {
+  max-width: 100%!important;
+}
+
 /* For screens <= 1536px (2xl) */
 @media (max-width: 1536px) {
-  /* You can add styles here specific to screens <= 1536px */
+  .container {
+    max-width: 100%!important;
+  }
 }
 
 /* For screens <= 1280px (xl) */
