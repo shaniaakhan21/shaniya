@@ -118,11 +118,11 @@ const Work: React.FC = () => {
             role: 'Django Developer',
             period: 'Oct 2020 - Jul 2021',
             description: [
-                'Developed a movie app using Django, GitHub, Git, Heroku, Python, HTML, and CSS with CRUD functionality for adding, updating, and deleting movies.',
-                'Built a portfolio website using HTML, CSS, JavaScript, Bootstrap, Django-Baton, and SendGrid.',
-                'Cloned cleverprogrammer.com to improve front-end skills using HTML, CSS, JavaScript and other technologies.'
+                'Spearheaded the development of a dynamic <b>movie app</b> using <b>Django, GitHub, Git, Heroku, Python, HTML,</b> and <b>CSS</b>, integrating robust <b>CRUD functionality</b> to allow seamless adding, updating, and deleting of movies, significantly enhancing user experience.',
+                'Designed and launched a personal <b>portfolio website</b> showcasing advanced proficiency in <b>HTML, CSS, JavaScript, Bootstrap, Django-Baton,</b> and <b>SendGrid</b>, providing an optimized platform for client interaction and professional growth.',
+                'Successfully replicated <b>cleverprogrammer.com</b> to refine front-end skills, utilizing modern technologies such as <b>HTML, CSS, JavaScript,</b> and <b>Django</b>, demonstrating strong adaptability and eagerness to innovate.'
             ],
-            skills: ['Python', 'TensorFlow']
+            skills: ['Python', 'Django', 'HTML', 'CSS', 'JavaScript', 'Django-Baton', 'Git', 'GitHub', 'Heroku', 'SendGrid', 'Bootstrap', 'CRUD Operations', 'API Integration']
         },
         {
             company: 'Omion Fusion Technologies Private Limited',
@@ -130,13 +130,12 @@ const Work: React.FC = () => {
             role: 'Web Developer & Trainer',
             period: 'May 2020 - Jul 2020',
             description: [
-                'Skilled in HTML, CSS, JavaScript, WordPress, Python, and Django, with experience in developing and maintaining a website with 99.9% uptime.',
-                'Handled development and maintenance of a website, achieving timely completion and deployment.',
-                '3 months of experience teaching python programming to kids, conducted online classes and taught students to complete minor projects.',
-                'Administered quizzes, assignments, and tests on a weekly basis, prepared daily PowerPoint presentations for the course.',
-                'Promoted to trainers coach after one month of teaching, provided training to other trainers for 2 months on time management, teaching skills, and curriculum development.'
+                'Led the development and maintenance of a high-availability <b>website</b> (99.9% uptime) using <b>HTML, CSS, JavaScript, WordPress, Python,</b> and <b>Django</b>, ensuring flawless performance and timely deployments.',
+                'Conducted online classes and provided hands-on <b>Python programming</b> instruction to students, successfully teaching and guiding them to complete impactful minor projects, fostering early programming skills.',
+                'Administered engaging <b>quizzes, assignments,</b> and tests weekly, complemented by detailed <b>PowerPoint presentations</b>, ensuring effective knowledge transfer and enhancing student participation.',
+                'Promoted to <b>Trainer’s Coach</b> within a month due to exceptional teaching performance, mentoring other trainers on <b>curriculum development, time management,</b> and effective teaching methodologies, significantly improving overall team efficiency.'
             ],
-            skills: ['Python', 'TensorFlow']
+            skills: ['Python', 'Django', 'HTML', 'CSS', 'JavaScript', 'WordPress', 'Web Development', 'Training', 'Curriculum Development', 'Online Teaching', 'Project Management', 'Mentorship', 'Time Management']
         },
     ];
 

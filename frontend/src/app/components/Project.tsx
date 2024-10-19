@@ -3,7 +3,7 @@ import React from 'react';
 import { Box } from '@mui/material';
 import Image from 'next/image';
 import Link from 'next/link';
-import CWEImage from '../../assets/images/work/cwe.png'
+import CWEImage from '../../assets/images/work/CWEBOOSTER.png'
 import { StaticImageData } from 'next/image';
 // Define the ProjectProps interface
 interface ProjectProps {
@@ -18,13 +18,13 @@ interface ProjectProps {
 // The Project component
 const Project: React.FC<ProjectProps> = ({ imageSrc, projectPage, altText, projectName, projectUrl, bgColor = '#ffeef978' }) => {
     return (
-        <Box className='bg-white rounded-xl mt-1 mb-2'>
-            <div className='flex justify-center p-4'>
+        <Box className='bg-white rounded-xl mt-1 mb-2 w-1/2'>
+            <div className='flex justify-center p-1 pb-0 rounded-xl '>
                 <Link href={projectPage} className='text-[#cc0088]' target="_blank" rel="noopener noreferrer">
-                    <Image src={imageSrc} width={80} height={80} alt={altText} />
+                    <Image src={imageSrc} alt={altText} className='rounded-t-xl' />
                 </Link>
             </div>
-            <div className={`p-4 rounded-b-xl`} style={{ backgroundColor: bgColor }}>
+            <div className={`p-4 m-1 rounded-b-xl`} style={{ backgroundColor: bgColor }}>
                 <h4>{projectName}</h4>
                 <Link href={projectUrl} className='text-[#cc0088]' target="_blank" rel="noopener noreferrer">
                     {projectUrl.replace('https://', '')}
@@ -37,7 +37,7 @@ const Project: React.FC<ProjectProps> = ({ imageSrc, projectPage, altText, proje
 const ProjectsPage: React.FC = () => {
 
     return (
-        <div className='p-0'>
+        <div className='p-0 flex flex-wrap'>
             <Project
                 imageSrc={CWEImage}
                 altText='Uttarakhand Technical University Logo'

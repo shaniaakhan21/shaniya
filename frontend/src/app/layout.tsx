@@ -13,7 +13,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   const pathname = usePathname();
-  const isDynamicPathExcluded = pathname.startsWith('/projects/');
+  const isDynamicPathExcluded = pathname.startsWith('/projects');
   const isLayoutExcluded = isDynamicPathExcluded;
 
   return (

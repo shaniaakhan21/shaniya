@@ -24,7 +24,7 @@ const SkillColors: React.FC<SkillColorsProps> = ({ skill }) => {
     'HTML': 'bg-[#dd4b2538] text-[#DD4B25] border-[#DD4B25]',
     'CSS': 'bg-[#254bdd38] text-[#254BDD] border-[#254BDD]',
     'TailwindCSS': 'bg-[#36b7f038] text-[#36B7F0] border-[#36B7F0]',
-    'JavaScript': 'bg-[#efd81d38] text-[#EFD81D] border-[#EFD81D]',
+    'JavaScript': 'bg-[#efd81d38] text-[#453420] border-[#EFD81D]',
     'Next.js': 'bg-[#00000038] text-black border-black',
     'MongoDB': 'bg-[#4da53f38] text-[#4DA53F] border-[#4DA53F]',
     'Django': 'bg-[#092d1f38] text-[#092D1F] border-[#092D1F]',
@@ -45,7 +45,7 @@ const SkillColors: React.FC<SkillColorsProps> = ({ skill }) => {
   };
 
   // Default style if skill not explicitly defined
-  const style = skillStyles[skill] || 'bg-[#f7754d38] text-[#F7754D] border-[#F7754D]';
+  const style = skillStyles[skill] || 'bg-[#cc00881f] text-[#c08] border-[#c08]';
 
   return (
     <span className={`text-[8px] sm:text-xs font-medium px-1 py-[2px] sm:px-2 sm:py-1 border rounded-full ${style}`}>

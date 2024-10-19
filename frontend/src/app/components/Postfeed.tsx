@@ -10,12 +10,13 @@ import PushPinIcon from '@mui/icons-material/PushPin';
 import SchoolIcon from '@mui/icons-material/School';
 import CelebrationIcon from '@mui/icons-material/Celebration';
 import LaptopIcon from '@mui/icons-material/Laptop';
-import RocketLaunchIcon from '@mui/icons-material/RocketLaunch';
+import CreateIcon from '@mui/icons-material/Create';
 //import { useRouter } from 'next/navigation';
 import Education from './Education';
 import Work from './Work';
 import Project from './Project';
 import RightSidebar from './RightSidebar';
+import Blogs from '../blogs/page';
 
 const PostFeed: React.FC = () => {
     const [activeTab, setActiveTab] = useState(0);
@@ -132,9 +133,9 @@ const PostFeed: React.FC = () => {
                             color: '#cc0088',
                         },
                     }}
-                    icon={<RocketLaunchIcon  className='text-[12px] sm:text-[16px]' />}
+                    icon={<CreateIcon  className='text-[12px] sm:text-[16px]' />}
                     iconPosition="start"
-                    label="Projects"
+                    label="Technical Blogs"
                     className='font-size-16-9 min-h-fit min-w-fit'
                 />
             </Tabs>
@@ -192,7 +193,7 @@ const PostFeed: React.FC = () => {
                 {/* Placeholder for other tabs */}
                 {activeTab === 1 && <><Education /></>}
                 {activeTab === 2 && <><Work /></>}
-                {activeTab === 3 && <><Project /></>}
+                {activeTab === 3 && <><Blogs /></>}
             </div>
             <div className='hidden md:relative md:block lg:hidden'>
             <RightSidebar/>

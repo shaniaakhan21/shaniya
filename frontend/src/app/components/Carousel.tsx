@@ -33,7 +33,7 @@ const Carousel: React.FC<CarouselProps> = ({ images }) => {
 
     return (
         <div className='flex justify-center'>
-            <Box sx={{ position: 'relative', width: '84%', height: '700px', overflow: 'hidden' }} className='flex  h-fit sm:h-full border border-grey-400'>
+            <Box sx={{width: '84%', height: '500px', overflow: 'hidden' }} className='flex  h-fit sm:h-full border border-grey-400'>
                 <div className='carouselWrapper' style={{ transform: `translateX(-${currentIndex * 100}%)` }}>
                     {images.map((image, index) => (
                         <div key={index} className='carouselItem'>
@@ -41,8 +41,7 @@ const Carousel: React.FC<CarouselProps> = ({ images }) => {
                                 src={image}
                                 alt={`Image ${index + 1}`}
                                 className='carouselImage'
-                                width={800}
-                                height={600}
+                                width="full"
                             />
                         </div>
                     ))}

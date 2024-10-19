@@ -8,7 +8,7 @@ const Blogs: React.FC = () => {
 
     return (
         <>
-            <BasicInfo className="hidden sm:block"/>
+            <BasicInfo className="hidden"/>
             <h1 className='text-2xl font-semibold mt-6'>Tech Tidbits and Tales!</h1>
             <h1 className='text-start mt-2'>Step-by-step tutorials for aspiring techies—let&#39;s decode together!</h1>
             <div className='grid grid-cols-1 gap-6 mt-4'>
