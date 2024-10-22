@@ -10,7 +10,7 @@ const RightSidebar: React.FC = () => {
 
 
     return (
-        <aside className="w-full lg:w-1/6 h-fit top-2 md:top-0 lg:top-16 relative md:relative lg:fixed mt-2 sm:mt-0">
+        <aside className="w-full lg:w-1/6 h-fit top-10 md:top-0 lg:top-16 relative md:relative lg:fixed mt-2 sm:mt-0">
             <div className='rounded-xl shadow-md px-4 py-3 bg-white '>
                 <div>
                     <div className='flex flex-row justify-start pb-1 items-center icons-ph'>

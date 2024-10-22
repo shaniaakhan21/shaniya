@@ -10,7 +10,7 @@ const Education: React.FC = () => {
 
     return (
         <>
-            <Box className='bg-white hover:bg-[#dee2e645] rounded-xl p-4'>
+            <Box className='bg-white hover:bg-[#dee2e645] rounded-xl p-4 shadow-md'>
 
                 <div className='flex flex-row items-center justify-between'>
                     <Link href='https://www.bits-pilani.ac.in/' target='_blank'>
@@ -31,7 +31,7 @@ const Education: React.FC = () => {
                     </div>
                 </div>
             </Box>
-            <Box className='bg-white hover:bg-[#dee2e645] rounded-xl p-4 mt-4'>
+            <Box className='bg-white hover:bg-[#dee2e645] rounded-xl p-4 mt-4 shadow-md'>
 
                 <div className='flex flex-row items-center justify-between'>
                     <Link href='https://uktech.ac.in/en' target='_blank'>

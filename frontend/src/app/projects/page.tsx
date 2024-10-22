@@ -67,13 +67,13 @@ const Projects: React.FC = () => {
     return (
         <><Header />
             <Container maxWidth="lg" className="bg-[#F7F7F7]">
-                <Typography variant="h2" className="text-center font-bold my-8">
+                <Typography variant="h2" className="text-center text-xl p-0 sm:text-3xl font-bold my-4 sm:my-8">
                     Projects
                 </Typography>
 
                 <div className="flex flex-wrap -mx-4 border-r border-b border-black mb-4 ">
                     {workItems.map((item, index) => (
-                        <div key={index} className="w-full sm:w-1/2 md:w-1/3 p-4 border-t border-l border-black">
+                        <div key={index} className="w-full flex flex-col justify-between sm:w-1/2 md:w-1/3 p-4 border-t border-l border-black">
                             <Card className="relative rounded-none filter-none drop-shadow-none shadow-none">
                                 <div className="relative overflow-hidden">
                                     {/* Image */}
@@ -88,7 +88,7 @@ const Projects: React.FC = () => {
                                             href={item.githubLink}
                                             target="_blank"
                                             rel="noopener noreferrer"
-                                            className="text-white hover:text-[#c08]"
+                                            className="text-white hover:text-[#c08] hover-icons"
                                         >
                                             <GitHubIcon />
                                         </a>
@@ -96,13 +96,13 @@ const Projects: React.FC = () => {
                                             href={item.websiteLink}
                                             target="_blank"
                                             rel="noopener noreferrer"
-                                            className="text-white hover:text-[#c08]"
+                                            className="text-white hover:text-[#c08] hover-icons"
                                         >
                                             <LaunchIcon />
                                         </a>
                                     </div>
                                 </div>
-                                <CardContent className='bg-[#F7F7F7] py-2 px-1'>
+                                <CardContent className='bg-[#F7F7F7] py-2 px-1 flex flex-col justify-between'>
                                     <Typography variant="h5" className="font-bold text-start">
                                         {item.title}
                                     </Typography>

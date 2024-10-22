@@ -1,5 +1,8 @@
 from django.contrib import admin
-from .models import Project
+from .models import Post
 
-# Register your models here.
-admin.site.register(Project)
+@admin.register(Post)
+class PostAdmin(admin.ModelAdmin):
+    list_display = ['title', 'author', 'date', 'pinned', 'company_name']
+    list_filter = ['pinned', 'company_name']
+    search_fields = ['title', 'author']

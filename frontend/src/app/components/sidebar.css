@@ -33,8 +33,10 @@
 @media (min-width: 640px) {
 
     .bg-sidebar::after {
-        width: 282px;
+        width: 253px;
         height: 86px;
-        right: -141px;
+        right: -126px;
     }
+
+    
 }

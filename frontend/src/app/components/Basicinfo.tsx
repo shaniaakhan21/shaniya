@@ -2,7 +2,7 @@
 import React from 'react';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import Link from 'next/link';
-import BusinessCenterIcon from '@mui/icons-material/BusinessCenter';
+import DownloadForOfflineIcon from '@mui/icons-material/DownloadForOffline';
 import CakeIcon from '@mui/icons-material/Cake';
 import RocketLaunchIcon from '@mui/icons-material/RocketLaunch';
 import LinkIcon from '@mui/icons-material/Link';
@@ -25,19 +25,21 @@ const BasicInfo: React.FC<BasicInfoProps> = ({ className = "" }) => {
             </div>
             <div className='flex justify-between items-center mt-4'>
                 <p className='flex items-center'>
-                    <BusinessCenterIcon className='text-[12px] sm:text-xl'/> <span className='text-gray-500 font-semibold text-[8px] sm:text-base ml-1'>Available</span>
-                </p>
-                <p className='flex items-center'>
-                    <Link href="/links" className='flex items-center'>
-                        <LinkIcon className='text-[12px] sm:text-xl'/> <span className='text-[#cc0088] cursor-pointer hover:underline font-bold text-[8px] sm:text-base ml-1'>Links</span>
+                    <Link href="/assets/pdfs/Shaniya_Khan_resume.pdf" download>
+                        <DownloadForOfflineIcon className='text-[12px] sm:text-xl' /> <span className='text-[#cc0088] cursor-pointer font-semibold hover:underline text-[8px] sm:text-base ml-1'>Résumé</span>
                     </Link>
                 </p>
                 <p className='flex items-center'>
-                    <CakeIcon className='text-[12px] sm:text-xl'/> <span className='text-gray-500 font-semibold text-[8px] sm:text-base ml-1'>21 Feb 1999</span>
+                    <Link href="/links" className='flex items-center'>
+                        <LinkIcon className='text-[12px] sm:text-xl' /> <span className='text-[#cc0088] cursor-pointer hover:underline font-semibold text-[8px] sm:text-base ml-1'>Links</span>
+                    </Link>
+                </p>
+                <p className='flex items-center'>
+                    <CakeIcon className='text-[12px] sm:text-xl' /> <span className='text-gray-500 font-semibold text-[8px] sm:text-base ml-1'>21 Feb 1999</span>
                 </p>
                 <p className='flex items-center' >
                     <Link href="/projects" target="_blank" rel="noopener noreferrer" className='flex items-center'>
-                        <RocketLaunchIcon className='text-[12px] sm:text-xl'/> <span className='text-[#cc0088] cursor-pointer hover:underline font-semibold text-[8px] sm:text-base ml-1'>Projects</span>
+                        <RocketLaunchIcon className='text-[12px] sm:text-xl' /> <span className='text-[#cc0088] cursor-pointer hover:underline font-semibold text-[8px] sm:text-base ml-1'>Projects</span>
                     </Link>
                 </p>
             </div>

@@ -11,6 +11,7 @@ import { AppBar, Toolbar, Typography } from '@mui/material';
 // import Image from 'next/image';
 import HomeIcon from '@mui/icons-material/Home';
 import Link from 'next/link';
+import DownloadForOfflineIcon from '@mui/icons-material/DownloadForOffline';
 
 const Header: React.FC = () => {
     // const { theme, toggleTheme } = useTheme();
@@ -75,7 +76,11 @@ const Header: React.FC = () => {
                         <HomeIcon sx={{ color: '#CC0088' }} id='social-icons'/>
                     </Link>
                 </Typography>
-
+                <Typography variant="h6" component="div" className='w-1/2 text-end'>
+                    <Link href="/assets/pdfs/Shaniya_Khan_resume.pdf" target="_blank" rel="noopener noreferrer" download>
+                        <DownloadForOfflineIcon sx={{ color: '#CC0088' }} id='social-icons'/>
+                    </Link>
+                </Typography>
                 {/* Theme toggle icons on the right */}
                 {/* <div className="flex items-center justify-end space-x-4 w-1/2">
                     <IconButton
