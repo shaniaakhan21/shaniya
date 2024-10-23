@@ -10,12 +10,12 @@ import SchoolIcon from '@mui/icons-material/School';
 import CelebrationIcon from '@mui/icons-material/Celebration';
 import LaptopIcon from '@mui/icons-material/Laptop';
 import CreateIcon from '@mui/icons-material/Create';
-//import { useRouter } from 'next/navigation';
 import Education from './Education';
 import Work from './Work';
 import RightSidebar from './RightSidebar';
 import Blogs from '../blogs/page';
 import axios from 'axios';
+import { format } from 'date-fns';
 
 interface Posts {
     title: string;
@@ -26,26 +26,55 @@ interface Posts {
     image?: string;
     date: Date;
     pinned?: boolean;
+    company_name?: string;
 }
 
-const PostFeed: React.FC = () => {
+const PostFeed: React.FC<{ company_name?: string; posts: Posts[] }> = ({ company_name, posts: externalPosts }) => {
     const [activeTab, setActiveTab] = useState(0);
-    const [posts, setPosts] = useState<Posts[]>([]);
-
+    const [posts, setPosts] = useState<Posts[]>(externalPosts || []);
+    const backendUrl = process.env.NEXT_PUBLIC_BACKEND_URL;
+    
     useEffect(() => {
-        axios.get<Posts[]>('http://localhost:8000/api/posts/')
-            .then(response => {
+        const fetchPosts = async () => {
+            try {
+                const url = `${backendUrl}/api/posts/`;
+                const response = await axios.get<Posts[]>(url);
+                // Log response to check data structure
+                console.log("Fetched Posts:", response.data);
+
                 // Convert date strings to Date objects
-                const postsWithDates = response.data.map(post => ({
-                    ...post,
-                    date: new Date(post.date), // Convert to Date object
-                }));
-                setPosts(postsWithDates);
-            })
-            .catch(error => {
+                const postsWithDates = response.data.map(post => {
+                    return {
+                        ...post,
+                        date: new Date(), // Default to now if invalid
+                    };
+                });
+
+                // Filter out posts with company_name
+                const filteredPosts = postsWithDates.filter(post => !post.company_name);
+
+                // Sort the posts
+                const sortedPosts = filteredPosts.sort((a, b) => {
+                    // First sort by pinned status
+                    if (a.pinned && !b.pinned) return -1;
+                    if (!a.pinned && b.pinned) return 1;
+                    // Then sort by date (latest first)
+                    return b.date.getTime() - a.date.getTime();
+                });
+
+                // Set the sorted posts to state
+                setPosts(sortedPosts);
+            } catch (error) {
                 console.error("Error fetching posts:", error);
-            });
-    }, []);
+            }
+        };
+
+        // Fetch posts only if externalPosts is not available
+        if (!externalPosts) {
+            fetchPosts();
+        }
+    }, );
+
 
     // Example post data with author, date, title, content, image, and mood
     // const posts = [
@@ -172,7 +201,7 @@ const PostFeed: React.FC = () => {
                     <div className="post-feed">
                         {posts.map((post) => (
                             <div key={post.title} className="post mb-4 px-4 sm:px-8 pt-4 pb-8 rounded-xl hover:bg-[#dee2e645]">
-                                {post.pinned && (
+                                {post.pinned && !company_name && (
                                     <div className="text-gray-600 text-xs">
                                         <PushPinIcon className='my-1' />
                                         <span className="ml-1">Pinned</span>
@@ -188,7 +217,7 @@ const PostFeed: React.FC = () => {
                                     />
                                     <div className="ml-3">
                                         <p className="font-semibold text-lg">{post.author}</p>
-                                        <p className="text-gray-400 text-sm">{post.date.toLocaleDateString()}</p>
+                                        <p className="text-gray-400 text-sm">{format(new Date(post.date), 'MMMM d, yyyy')}</p>
                                     </div>
                                 </div>
 
